@@ -7,3 +7,4 @@ packages
 .vscode
 .vs/*
 Properties
+.DS_Store
