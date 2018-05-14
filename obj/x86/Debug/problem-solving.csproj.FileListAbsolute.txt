@@ -1,0 +1,5 @@
+/Users/adamknight/Documents/Development/Projects/csharp/problem-solving/obj/x86/Debug/problem-solving.csproj.CoreCompileInputs.cache
+/Users/adamknight/Documents/Development/Projects/csharp/problem-solving/bin/Debug/problem-solving.exe
+/Users/adamknight/Documents/Development/Projects/csharp/problem-solving/bin/Debug/problem-solving.pdb
+/Users/adamknight/Documents/Development/Projects/csharp/problem-solving/obj/x86/Debug/problem-solving.exe
+/Users/adamknight/Documents/Development/Projects/csharp/problem-solving/obj/x86/Debug/problem-solving.pdb

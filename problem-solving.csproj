@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{F757DE5A-03F4-4874-9022-FED3E1912DCF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>problemsolving</RootNamespace>
+    <AssemblyName>problem-solving</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursion\Fibonacci.cs" />
+    <Compile Include="Recursion\FindPermutations.cs" />
+    <Compile Include="Recursion\SubSets.cs" />
+    <Compile Include="Arrays\UniqueChars.cs" />
+    <Compile Include="Arrays\ReverseString.cs" />
+    <Compile Include="Arrays\StringCompress.cs" />
+    <Compile Include="Arrays\WhiteOut.cs" />
+    <Compile Include="LinkedList\Node.cs" />
+    <Compile Include="LinkedList\FindNodeFromLast.cs" />
+    <Compile Include="LinkedList\FindLoopStart.cs" />
+    <Compile Include="LinkedList\Palidrome.cs" />
+    <Compile Include="LinkedList\DeleteNode.cs" />
+    <Compile Include="LinkedList\SumOfValues.cs" />
+    <Compile Include="LinkedList\SumOfLists.cs" />
+    <Compile Include="LinkedList\Utils.cs" />
+    <Compile Include="StacksAndQueues\StackQueue.cs" />
+    <Compile Include="Trees\TreeNode.cs" />
+    <Compile Include="Trees\Utils.cs" />
+    <Compile Include="Trees\TreeProcessor.cs" />
+    <Compile Include="Trees\BalancedTree.cs" />
+    <Compile Include="Arrays\RotationString.cs" />
+    <Compile Include="Arrays\ReplaceCharacter.cs" />
+    <Compile Include="Arrays\RoboToPath.cs" />
+    <Compile Include="Arrays\RobotPathMatrix.cs" />
+    <Compile Include="Arrays\RotateMatrix.cs" />
+    <Compile Include="HashTable\TrivialHashTable.cs" />
+    <Compile Include="HashTable\IKeyed.cs" />
+    <Compile Include="StacksAndQueues\NStacks.cs" />
+    <Compile Include="StacksAndQueues\Queue.cs" />
+    <Compile Include="StacksAndQueues\Node.cs" />
+    <Compile Include="StacksAndQueues\SortedStack.cs" />
+    <Compile Include="StacksAndQueues\CustomStack.cs" />
+    <Compile Include="StacksAndQueues\StackOfStacks.cs" />
+    <Compile Include="StacksAndQueues\Tower.cs" />
+    <Compile Include="LinkedList\PartitionNodes.cs" />
+    <Compile Include="LinkedList\ComparableNode.cs" />
+    <Compile Include="LinkedList\MergeNodeList.cs" />
+    <Compile Include="LinkedList\RemoveDuplicates.cs" />
+    <Compile Include="Graphs\DirectedGraph.cs" />
+    <Compile Include="Graphs\IGraph.cs" />
+    <Compile Include="Graphs\DepthFirstSearch.cs" />
+    <Compile Include="Graphs\BreadthFirstSearch.cs" />
+    <Compile Include="Graphs\PathFinder.cs" />
+    <Compile Include="Graphs\Utils.cs" />
+    <Compile Include="Trees\MinimalBST.cs" />
+    <Compile Include="Trees\BinaryTreeToLinkLists.cs" />
+    <Compile Include="Trees\IsBST.cs" />
+    <Compile Include="Trees\FindSuccessor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursion\" />
+    <Folder Include="Misc\" />
+    <Folder Include="Arrays\" />
+    <Folder Include="LinkedList\" />
+    <Folder Include="StacksAndQueues\" />
+    <Folder Include="Trees\" />
+    <Folder Include="Graphs\" />
+    <Folder Include="HashTable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
