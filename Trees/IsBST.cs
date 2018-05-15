@@ -1,47 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using msCollections = System.Collections.Generic;
-
-namespace problemsolving.Trees
+﻿namespace problemsolving.Trees
 {
     public class IsBinarySearchTree
     {
-        public bool Validate(TreeNode<int> tree)
+        public bool Validate(TreeNode<int> node)
         {
-            var isBinarySearchTree = true;
+            return IsBst(node);
+        }
 
-            var queue = new Queue<TreeNode<int>>();
+        private bool IsBst(TreeNode<int> node, int? min = null, int? max = null)
+        {
+            if (node == null) return true;
 
-            queue.Enqueue(tree);
+            if (min.HasValue && node.Value < min || max.HasValue && node.Value > max)
+                return false;
 
-            while (queue.Count > 0) 
-            {
-                var current = queue.Dequeue();
-
-                if (current.Left != null)
-                {
-                    if (current.Left.Value > current.Value)
-                    {
-                        isBinarySearchTree = false;
-                        break;
-                    }
-
-                    queue.Enqueue(current.Left);
-                }
-
-                if (current.Right != null)
-                {
-                    if (current.Right.Value < current.Value)
-                    {
-                        isBinarySearchTree = false;
-                        break;
-                    }
-
-                    queue.Enqueue(current.Right);
-                }
-            }
-
-            return isBinarySearchTree;
+            if (IsBst(node.Left, min, node.Value) || IsBst(node.Right, node.Value, max))
+                return false;
+            
+            return true;
         }
     }
 }

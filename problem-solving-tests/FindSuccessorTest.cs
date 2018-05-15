@@ -3,7 +3,6 @@ using problemsolving.Trees;
 
 namespace problemsolvingtests
 {
-    [TestFixture()]
     public class FindSuccessoTest
     {
         [Test()]
