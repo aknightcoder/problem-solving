@@ -81,6 +81,7 @@
     <Compile Include="Trees\BinaryTreeToLinkLists.cs" />
     <Compile Include="Trees\IsBST.cs" />
     <Compile Include="Trees\FindSuccessor.cs" />
+    <Compile Include="Trees\LowestCommonAncestor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Recursion\" />
